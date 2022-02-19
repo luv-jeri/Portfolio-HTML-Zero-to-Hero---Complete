@@ -1,0 +1,181 @@
+@import 'utils.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #2eb086;
+  --dark: #313552;
+  --light: #f0f0f0;
+  --tertiary: #b8405e;
+  --pure: #ffffff;
+  --mix : #54BAB9
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+header {
+  background: var(--dark);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 5vw)
+  );
+}
+span {
+  color: var(--primary);
+}
+
+h6 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--tertiary);
+}
+header nav .left a {
+  color: var(--pure);
+  text-decoration: none;
+  margin-right: 10px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+header nav .left a:hover {
+  color: var(--primary);
+}
+
+header nav {
+  padding: 0.6rem 0;
+}
+
+.brand {
+  margin-right: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.hero .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0.5rem;
+  color: var(--pure);
+  text-align: end;
+}
+.hero .right p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.hero .right h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: -0.5rem 0 0.5rem 0;
+}
+
+.hero .right p {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+section.about h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+}
+section.about h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+}
+
+section.about p {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+}
+
+section.about .social {
+  display: flex;
+}
+
+section.about .social img {
+  height: 35px;
+  width: 35px;
+}
+section.about .social a {
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+}
+
+section.about .social a:hover {
+  transform: scale(1.2);
+}
+
+section .container {
+  padding: 1rem;
+}
+
+.me-img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px
+    rgba(0, 0, 0, 0.5);
+}
+.wrapper {
+  display: flex;
+}
+
+.card {
+  background-color: var(--light);
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px
+    rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--dark);
+}
+.card:hover {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+}
+.card img {
+  position: absolute;
+  right: -25px;
+  top: -25px;
+}
