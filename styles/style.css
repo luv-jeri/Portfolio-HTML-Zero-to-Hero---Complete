@@ -24,6 +24,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
 }
+
 header {
   background: var(--dark);
   clip-path: polygon(
@@ -42,6 +43,7 @@ h6 {
   font-weight: 500;
   color: var(--tertiary);
 }
+
 header nav .left a {
   color: var(--pure);
   text-decoration: none;
@@ -77,6 +79,7 @@ header nav {
   color: var(--pure);
   text-align: end;
 }
+
 .hero .right p {
   font-size: 0.8rem;
   line-height: 1.5;

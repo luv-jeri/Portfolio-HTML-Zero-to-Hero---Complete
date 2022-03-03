@@ -42,4 +42,6 @@
 
 .flex-1 {
   flex: 1;
+} primary {
+  color: var(--primary);
 }

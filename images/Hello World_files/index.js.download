@@ -1,0 +1,4 @@
+// document.getElementById('Hello').onclick =
+//   function () {
+//     alert('Hello World!');
+//   };
